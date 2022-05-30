@@ -28,6 +28,7 @@ const [limit, setLimit] = React.useState(3);
 
 const pageFind=(newpage)=>{
   setPage(newpage)
+  console.log(newpage);
 }
 const handlelimit=(e)=>{
 let {value}=e.target;
@@ -56,7 +57,7 @@ useEffect(() => {
       {/* Pagination */}
     
     </Flex>
-    <Pagination pageFind={pageFind} handlelimit={handlelimit}/>
+    <Pagination pageFind={pageFind} handlelimit={handlelimit} page={page}/>
     </div>
   );
 };

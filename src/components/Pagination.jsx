@@ -6,11 +6,12 @@ const Pagination = ({pageFind,handlelimit}) => {
   // const Button = () => <div />;
   // const ButtonGroup = () => <div />;
   // const Select = () => <div />;
-
+const [count, setcount] = React.useState(1);
+console.log(count);
   return (
     <ButtonGroup>
       <Button data-cy="pagination-first-button" size='lg' onClick={()=>pageFind(1)}>First</Button>
-      <Button data-cy="pagination-previous-button" size='lg' onClick={()=>pageFind(1)}>Previous</Button>
+      <Button data-cy="pagination-previous-button" size='lg' onClick={()=>setcount(count+1)}>Previous</Button>
       <Select data-cy="pagination-limit-select" onChange={handlelimit}>
         <option data-cy="pagination-limit-3" value="3">3</option>
         <option data-cy="pagination-limit-6" value="6">6</option>
