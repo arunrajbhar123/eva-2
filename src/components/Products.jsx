@@ -19,10 +19,11 @@ const Products = () => {
         newdata,
       }),
     });
+   
   };
 const [reCollect, setReCollect] = React.useState([]);
 // /posts?_page=7&_limit=20
-
+// 
 const [page, setPage] = React.useState(1);
 const [limit, setLimit] = React.useState(3);
 
