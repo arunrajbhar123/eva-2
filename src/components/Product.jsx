@@ -7,15 +7,15 @@ import {
   Heading,
   Tag,
   TagLabel,
+  Grid,
 } from "@chakra-ui/react";
 const Product = ({ reCollect }) => {
   // TODO: Remove below const and instead import them from chakra
 
   return (
-    <Stack data-cy="product">
+    <Stack data-cy="product" >
       {reCollect.map(({id,title,category,gender,imageSrc,price,newdata}) => (
-        <div key={id}>
-          <h1>{title}</h1>
+        <div key={id} >
           <h1>{console.log(newdata)}</h1>
           <Image
             data-cy="product-image"

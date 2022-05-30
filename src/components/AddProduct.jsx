@@ -41,7 +41,7 @@ const handledata =()=>{
     <>
    
      
-      <Button my={4} data-cy="add-product-button" onClick={onOpen} >Add Product</Button>
+      <Button my={4} data-cy="add-product-button" size='lg' onClick={onOpen} >Add Product</Button>
       <Modal initialFocusRef={initialRef}
         finalFocusRef={finalRef}
         isOpen={isOpen}
